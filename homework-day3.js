@@ -25,13 +25,13 @@ few different scores and log the result to make sure it works. (edited)
 
 
 // 2
-function editFruitList(){
-   let favoriteFruits = ['mango', 'lychee', 'rambutan', 'papaya']
-    favoriteFruits.shift() && favoriteFruits.push('Kiwi')
-    return console.log(favoriteFruits)
-}
+// function editFruitList(){
+//    let favoriteFruits = ['mango', 'lychee', 'rambutan', 'papaya']
+//     favoriteFruits.shift() && favoriteFruits.push('Kiwi')
+//     return console.log(favoriteFruits)
+// }
 
-editFruitList()
+// editFruitList()
 
 
 // Bonus
@@ -40,7 +40,7 @@ function assignGrade(score){
         case score >= 90:
             console.log('A') 
             break
-        case score >=79 && score <= 89:
+        case score >=79 && score <= 89: //range is not necessary
             console.log('B') 
             break
         case score >=69 && score <=79:
@@ -57,4 +57,4 @@ function assignGrade(score){
                     }
     }
 
-assignGrade(99)
+assignGrade(72)
