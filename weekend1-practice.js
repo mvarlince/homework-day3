@@ -1,0 +1,42 @@
+//1. Create a function which returns the number of true values there are in an array.
+function trueVals(arr){
+    let result = 0
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] === 'true'){
+            result++
+        }
+    }
+    return result
+}
+
+const testArray = [ 'true', 'false', 'false', 'true', 'false', 'false', 'false', 'true', 'true', 'true', 'false' ]
+console.log(trueVals(testArray))
+
+
+//2. Write a function called combineTwoArrays that takes in two arrays as arguments, and returns a single array that combines both.
+function combineTwoArrays(a1,a2){
+    result = a1.concat(a2)
+    return result
+}
+
+test1 = ['a', 'b', 'c']
+test2 = ['d','e', 'f']
+
+console.log(combineTwoArrays(test1,test2))
+
+
+// 3. You are given 2 arrays, one called shoppingList and one called cart.
+// Example: Let shoppingList = [‘beer’, ‘milk’, ‘wine’, ‘bananas’, ‘sugar’]
+// Let cart = [‘milk’, ‘beer’]
+// Create a new version of shoppingList where the items in the cart have been removed. 
+function combineArrays(shoppingList,cart){
+    for (let i = 0; i < cart.length; i++){
+        shoppingList.push(cart[i])
+    }
+    return shoppingList
+}
+
+const shoppingListTest = ['beer’', 'milk’', 'wine’', 'bananas’', 'sugar’']
+const cartTest = ['milk’', 'beer’']
+
+console.log(combineArrays(shoppingListTest,cartTest))

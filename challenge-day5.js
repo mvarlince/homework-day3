@@ -22,6 +22,7 @@
 
 
 //given a number of rows and column, output a grid of *
+
 // function spitGrid(rows, columns) {
 //     for (let i = 0; i < rows; i++) {
 //         let row = '';
@@ -68,13 +69,57 @@
 
 //random string, cap first letter, lowercase all others, and add a period
 
-function grammar(randomString){
+// function grammar(randomString){
 
-    randomString.toUpperCase([0])
-    randomString.toLowerCase(randomString.substring(1,randomString.length))
-    let randomString2 = randomString.push('.')
+//     randomString[0].toUpperCase()
+//     let stringThree = randomString.toLowerCase(randomString.substring(1,randomString.length))
+//     let randomString2 = stringThree + '.'
 
-    return randomString2
+//     return randomString2
+// }
+
+// console.log(grammar('aDFGHSDFGSDFGSDFGS'))
+
+
+
+// given a number of rows and columns, output a grid of *
+
+// function nestedLoopPractice(rows, columns){
+//     for(let i = 0; i < rows; i++){
+//         rows = ' '
+//         for(let j = 0; j < columns; j++){
+//         rows += '*'
+//         }
+//      console.log(rows)
+//     }
+// }
+
+// nestedLoopPractice(5,5)
+// Create a multiplication grid for |x| to 10 x 10 using loops
+
+// function mulpGrid(x,y){
+//     let sir = ''
+//     for (let i = 0; i < x; i++){
+//         for (let j = 0; j < y; i++){
+//             sir += i * j + ' '
+//         }
+//         sir += ' \n\n'
+//     }
+//     return sir
+// }
+
+// console.log(mulpGrid(5,5))
+
+function mathGrid(x, y) {
+    let result = ''
+
+    for (let i = 1; i < x + 1; i++) {
+        for (let k = 1; k < y + 1; k++) {
+            result += i * k + '   '
+    }
+    result += ' \n\n'
+}
+    return result
 }
 
-console.log(grammar('aDFGHSDFGSDFGSDFGS'))
+console.log(mathGrid(10,10))
