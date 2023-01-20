@@ -7,13 +7,13 @@ ageYearsToMin(11)
 
 // Write a function that takes in an array of numbers and returns the sum of all even numbers.
 function evenSum(arr){
-    newArr = 0
+    let total = 0
     for (let i = 0; i <= arr.length; i++){
     if (arr[i] % 2 == 0){
-        newArr += arr[i] 
+        total += arr[i] 
         }
          }
-    return newArr
+    return total
     }
 
     testArr = [2,2,2]
